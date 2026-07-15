@@ -1,0 +1,6 @@
+{
+  "description": "Default Foundry join credentials for Dark Heresy 3rd Edition local testing. Env vars FOUNDRY_URL, FOUNDRY_USER, FOUNDRY_PASSWORD override these values.",
+  "foundryUrl": "http://localhost:30000",
+  "user": "cursor-gm",
+  "password": ""
+}

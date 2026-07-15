@@ -1,0 +1,129 @@
+{
+  "id": "dark-heresy-3rd-edition",
+  "title": "Dark Heresy 3rd Edition",
+  "description": "Dark Heresy 3rd Edition - Foundry VTT",
+  "version": "1.8.1",
+  "compatibility": {
+    "minimum": 14,
+    "verified": "14.360",
+    "maximum": 14
+  },
+  "authors": [
+    {
+      "name": "Matt Keathley",
+      "url": "https://www.keathley.co",
+      "discord": "mkea"
+    }
+  ],
+  "esmodules": [
+    "module/dark-heresy-3rd-edition.mjs"
+  ],
+  "styles": [
+    "css/dark-heresy-3rd-edition.css"
+  ],
+  "scripts": [],
+  "packs": [
+    {
+      "name": "ammo",
+      "system": "dark-heresy-3rd-edition",
+      "label": "Ammo",
+      "path": "./packs/ammo.db",
+      "type": "Item"
+    },
+    {
+      "name": "aptitudes",
+      "system": "dark-heresy-3rd-edition",
+      "label": "Aptitudes",
+      "path": "./packs/aptitudes.db",
+      "type": "Item"
+    },
+    {
+      "name": "armour",
+      "system": "dark-heresy-3rd-edition",
+      "label": "Armour",
+      "path": "./packs/armour.db",
+      "type": "Item"
+    },
+    {
+      "name": "attack-specials",
+      "system": "dark-heresy-3rd-edition",
+      "label": "Specials",
+      "path": "./packs/attack-specials.db",
+      "type": "Item"
+    },
+    {
+      "name": "consumables",
+      "system": "dark-heresy-3rd-edition",
+      "label": "Drugs and Consumables",
+      "path": "./packs/consumables.db",
+      "type": "Item"
+    },
+    {
+      "name": "cybernetics",
+      "system": "dark-heresy-3rd-edition",
+      "label": "Cybernetics",
+      "path": "./packs/cybernetics.db",
+      "type": "Item"
+    },
+    {
+      "name": "psychic-powers",
+      "system": "dark-heresy-3rd-edition",
+      "label": "Psychic Powers",
+      "path": "./packs/psychic-powers.db",
+      "type": "Item"
+    },
+    {
+      "name": "tables",
+      "system": "dark-heresy-3rd-edition",
+      "label": "Tables",
+      "path": "./packs/tables.db",
+      "type": "RollTable"
+    },
+    {
+      "name": "talents",
+      "system": "dark-heresy-3rd-edition",
+      "label": "Talents",
+      "path": "./packs/talents.db",
+      "type": "Item"
+    },
+    {
+      "name": "tools",
+      "system": "dark-heresy-3rd-edition",
+      "label": "Tools",
+      "path": "./packs/tools.db",
+      "type": "Item"
+    },
+    {
+      "name": "traits",
+      "system": "dark-heresy-3rd-edition",
+      "label": "Traits",
+      "path": "./packs/traits.db",
+      "type": "Item"
+    },
+    {
+      "name": "weapons",
+      "system": "dark-heresy-3rd-edition",
+      "label": "Weapons",
+      "path": "./packs/weapons.db",
+      "type": "Item"
+    },
+    {
+      "name": "weapon-mods",
+      "system": "dark-heresy-3rd-edition",
+      "label": "Weapon Mods",
+      "path": "./packs/weapon-mods.db",
+      "type": "Item"
+    }
+  ],
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "wounds",
+  "secondaryTokenAttribute": "fate",
+  "url": "https://github.com/mrkeathley/dark-heresy-3rd-edition-vtt",
+  "manifest": "https://s3-keathley.nyc3.digitaloceanspaces.com/dark-heresy-3rd-edition/system.json",
+  "download": "https://s3-keathley.nyc3.digitaloceanspaces.com/dark-heresy-3rd-edition/dark-heresy-3rd-edition-1.8.1.zip",
+  "license": "LICENSE.txt",
+  "bugs": "https://github.com/mrkeathley/dark-heresy-3rd-edition-vtt/issues"
+}

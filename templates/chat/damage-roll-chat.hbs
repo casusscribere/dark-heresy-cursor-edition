@@ -1,0 +1,44 @@
+<div class="dh-wrapper">
+    {{#with rollData}}
+    <div class="dh-chat">
+        <h3>Damage Roll</h3>
+        <div class="dh-roll">
+            <h1>{{name}}</h1>
+            <div class="dh-roll__divider"></div>
+
+            <div class="dh-roll__row dh-roll__row--number">
+                <div class="dh-roll__label">Formula</div>
+                <div class="dh-roll__value">{{roll.formula}}</div>
+            </div>
+            <div class="dh-roll__row dh-roll__row--number">
+                <div class="dh-roll__label">Damage Type</div>
+                <div class="dh-roll__value">{{damageType}}</div>
+            </div>
+
+            <div class="dh-roll__notice">
+                <span>Damage</span>
+                <span>{{roll.total}}</span>
+            </div>
+
+            <div class="dh-roll__notice">
+                <span>Penetration</span>
+                <span>{{penetration}}</span>
+            </div>
+
+            {{#if targetActor}}
+                <div class='dh-roll__controls-1'>
+                    <div class="dh-control-button roll-control__assign-damage"
+                            data-location="Body"
+                            data-total-damage="{{roll.total}}"
+                            data-total-penetration="{{penetration}}"
+                            data-target-uuid="{{targetActor.uuid}}"
+                            data-damage-type="{{damageType}}">
+                        <span class="dh-control-button__span material-icons">api</span>
+                        <span class="dh-control-button__label">Assign Damage</span>
+                    </div>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+    {{/with}}
+</div>

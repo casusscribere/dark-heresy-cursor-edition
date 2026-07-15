@@ -1,0 +1,2046 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400|Lusitana:400:700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.dh-material, .dh-wrapper .dh-settings__label--add, .dh-wrapper button.dh-vocalise[type=roll], .dh-wrapper .dh-control-button__span {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-grid;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.dh-wrapper {
+  position: relative;
+}
+.dh-wrapper * {
+  font-size: 10pt;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: inherit;
+  min-width: 0;
+}
+.dh-wrapper fieldset {
+  background: transparent;
+}
+.dh-wrapper span {
+  word-break: break-word;
+}
+.dh-wrapper input[type=number] {
+  -moz-appearance: textfield;
+}
+.dh-wrapper input[type=number]::-webkit-outer-spin-button, .dh-wrapper input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.dh-wrapper fieldset {
+  background: transparent;
+}
+.dh-wrapper span {
+  word-break: break-word;
+}
+.dh-wrapper h1,
+.dh-wrapper h2,
+.dh-wrapper h3,
+.dh-wrapper h4,
+.dh-wrapper h5 {
+  font-size: unset;
+  line-height: unset;
+  color: unset;
+}
+.dh-wrapper a,
+.dh-wrapper p,
+.dh-wrapper input,
+.dh-wrapper input[type=number],
+.dh-wrapper textarea,
+.dh-wrapper select,
+.dh-wrapper button,
+.dh-wrapper button[type=roll],
+.dh-wrapper label {
+  display: unset;
+  width: 100%;
+  min-width: 0;
+  height: unset;
+  padding: unset;
+  margin-bottom: unset;
+  color: unset;
+  border: unset;
+  border-radius: unset;
+  background: unset;
+  background-color: unset;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  font-family: unset;
+  font-size: unset;
+  font-weight: unset;
+  text-align: unset;
+  line-height: unset;
+}
+.dh-wrapper button[type=roll]:before {
+  display: none;
+}
+.dh-wrapper * {
+  font-family: "IM Fell DW Pica", serif;
+  font-size: 10pt;
+}
+.dh-wrapper * .fas {
+  font-family: "Font Awesome 6 Pro" !important;
+  --font-family-classic: "Font Awesome 6 Pro" !important;
+}
+.dh-wrapper button,
+.dh-wrapper button[type=roll],
+.dh-wrapper input[type=text],
+.dh-wrapper input[type=number],
+.dh-wrapper select,
+.dh-wrapper option,
+.dh-wrapper textarea,
+.dh-wrapper label,
+.dh-wrapper span.display {
+  font-family: "Lusitana", serif;
+  font-size: 10pt;
+}
+.dh-wrapper h1,
+.dh-wrapper h2,
+.dh-wrapper h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "IM Fell DW Pica", serif;
+}
+.dh-wrapper h1 {
+  font-size: 12pt;
+}
+.dh-wrapper h2 {
+  font-size: 11pt;
+}
+.dh-wrapper h3 {
+  font-size: 10pt;
+}
+.dh-wrapper .mt-5 {
+  margin-top: 5px;
+}
+.dh-wrapper .mt-10 {
+  margin-top: 10px;
+}
+.dh-wrapper .dh-chat {
+  font-family: "Lusitana", serif;
+  color: black;
+}
+.dh-wrapper .dh-chat .inline-roll {
+  background: #DDD;
+  padding: 1px 4px;
+  border: 1px solid var(--color-border-dark-tertiary);
+  border-radius: 2px;
+  font-family: "Font Awesome 6 Pro";
+  --font-family-classic: "Font Awesome 6 Pro";
+  white-space: nowrap;
+  word-break: break-all;
+}
+.dh-wrapper .dh-chat h1,
+.dh-wrapper .dh-chat h2,
+.dh-wrapper .dh-chat h3 {
+  grid-column: 1/-1;
+  margin: 0;
+  border: none;
+  font-family: "Lusitana", serif;
+  line-height: 1em;
+  text-align: center;
+}
+.dh-wrapper .dh-chat h1 {
+  padding: 0;
+  color: black;
+  font-family: "IM Fell DW Pica", serif;
+  font-size: 14pt;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.dh-wrapper .dh-chat h2 {
+  font-size: 12pt;
+}
+.dh-wrapper .dh-chat h3 {
+  font-size: 9pt;
+  text-transform: uppercase;
+  color: #333333;
+}
+.dh-wrapper .dh-chat .importantroll,
+.dh-wrapper .dh-chat .fullcrit,
+.dh-wrapper .dh-chat .fullfail,
+.dh-wrapper .dh-chat .inlinerollresult {
+  border: none !important;
+  background: transparent;
+  font-family: inherit;
+  line-height: 1em;
+}
+.dh-wrapper .dh-chat .fullcrit {
+  color: darkgreen;
+}
+.dh-wrapper .dh-chat .fullfail {
+  color: darkred;
+}
+.dh-wrapper .dh-chat .dh-roll {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem 1.5rem;
+  background: url("../images/40k_back.png") no-repeat center/100% 100%;
+}
+.dh-wrapper .dh-chat .dh-roll__divider {
+  width: 100%;
+  height: 10px;
+  grid-column: 1/-1;
+  background: url("../images/divider.png") no-repeat center/100% 100%;
+}
+.dh-wrapper .dh-chat .dh-roll__controls {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0.2rem;
+  background: url("../images/chat-control.png") no-repeat center/100% 100%;
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+.dh-wrapper .dh-chat .dh-roll__controls-2 {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.2rem;
+  background: url("../images/chat-control.png") no-repeat center/100% 100%;
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+.dh-wrapper .dh-chat .dh-roll__controls-1 {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0.2rem;
+  background: url("../images/chat-control.png") no-repeat center/100% 100%;
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+.dh-wrapper .dh-chat .dh-roll__result {
+  grid-column: 1/-1;
+  font-size: 4rem;
+  text-align: center;
+}
+.dh-wrapper .dh-chat .dh-roll__target {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 3em;
+  padding: 0.5rem;
+  background: url("../images/max.png") no-repeat center/100% 100%;
+  font-weight: bold;
+}
+.dh-wrapper .dh-chat .dh-roll__notice {
+  grid-column: 1/-1;
+  padding: 0.3rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.dh-wrapper .dh-chat .dh-roll__notice > span:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.dh-wrapper .dh-chat .dh-roll__success, .dh-wrapper .dh-chat .dh-roll__fail {
+  grid-column: 1/-1;
+  padding: 0.3rem;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.dh-wrapper .dh-chat .dh-roll__success > span:not(:last-child), .dh-wrapper .dh-chat .dh-roll__fail > span:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.dh-wrapper .dh-chat .dh-roll__notice {
+  background: #535538;
+  background: url("../images/notice.png") no-repeat center/100% 100%;
+}
+.dh-wrapper .dh-chat .dh-roll__success {
+  background: #073;
+  background: url("../images/success.png") no-repeat center/100% 100%;
+}
+.dh-wrapper .dh-chat .dh-roll__fail {
+  background: #900;
+  background: url("../images/fail.png") no-repeat center/100% 100%;
+}
+.dh-wrapper .dh-chat .dh-roll__row, .dh-wrapper .dh-chat .dh-roll__row--full {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  gap: 0.25rem;
+}
+.dh-wrapper .dh-chat .dh-roll__row--number {
+  grid-template-columns: 1fr 4rem;
+}
+.dh-wrapper .dh-chat .dh-roll__row--full {
+  display: block;
+}
+.dh-wrapper .dh-chat .dh-roll__label {
+  font-weight: bold;
+  text-align: left;
+}
+.dh-wrapper .dh-chat .dh-roll__value {
+  text-align: center;
+}
+.dh-wrapper .dh-chat .dh-roll__value .inlinerollresult {
+  font-weight: normal;
+}
+.dh-wrapper .dh-chat .dh-roll_sl {
+  font-size: 0.9em;
+}
+.dh-wrapper .dh-chat .dh-roll__text {
+  max-height: 10em;
+  overflow: hidden auto;
+  padding: 0.25rem;
+}
+.dh-wrapper .dh-table--no-border .table-row--highlight, .dh-wrapper .dh-table--no-border .table-row--head, .dh-wrapper .dh-table--no-border .table-row {
+  display: grid;
+  grid-column: 1/-1;
+}
+.dh-wrapper .dh-table--border .table-cell--settingstoggle, .dh-wrapper .dh-table--no-border .table-cell--image, .dh-wrapper .dh-table--no-border .table-cell--span3, .dh-wrapper .dh-table--no-border .table-cell--span2, .dh-wrapper .dh-table--no-border .table-cell--left, .dh-wrapper .dh-table--no-border .table-cell--grouped, .dh-wrapper .dh-table--no-border .table-cell--last, .dh-wrapper .dh-table--no-border .table-cell--settingstoggle, .dh-wrapper .dh-table--no-border .table-cell, .dh-wrapper .dh-table--no-border .table-cell--description {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.dh-wrapper .dh-table--border .table-cell--settingstoggle:first-child, .dh-wrapper .dh-table--no-border .table-cell--image:first-child, .dh-wrapper .dh-table--no-border .table-cell--span3:first-child, .dh-wrapper .dh-table--no-border .table-cell--span2:first-child, .dh-wrapper .dh-table--no-border .table-cell--left:first-child, .dh-wrapper .dh-table--no-border .table-cell--grouped:first-child, .dh-wrapper .dh-table--no-border .table-cell--last:first-child, .dh-wrapper .dh-table--no-border .table-cell--settingstoggle:first-child, .dh-wrapper .dh-table--no-border .table-cell:first-child, .dh-wrapper .dh-table--no-border .table-cell--description:first-child {
+  text-align: left;
+  font-weight: bolder;
+  margin-block: auto;
+}
+.dh-wrapper .dh-table--border .table-cell--settingstoggle:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--image:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--span3:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--span2:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--left:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--grouped:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--last:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--settingstoggle:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--description:not(:first-child) {
+  text-align: center;
+  margin-block: auto;
+}
+.dh-wrapper .dh-table--border .table-cell--settingstoggle label, .dh-wrapper .dh-table--no-border .table-cell--image label, .dh-wrapper .dh-table--no-border .table-cell--span3 label, .dh-wrapper .dh-table--no-border .table-cell--span2 label, .dh-wrapper .dh-table--no-border .table-cell--left label, .dh-wrapper .dh-table--no-border .table-cell--grouped label, .dh-wrapper .dh-table--no-border .table-cell--last label, .dh-wrapper .dh-table--no-border .table-cell--settingstoggle label, .dh-wrapper .dh-table--no-border .table-cell label, .dh-wrapper .dh-table--no-border .table-cell--description label,
+.dh-wrapper .dh-table--border .table-cell--settingstoggle span,
+.dh-wrapper .dh-table--no-border .table-cell--image span,
+.dh-wrapper .dh-table--no-border .table-cell--span3 span,
+.dh-wrapper .dh-table--no-border .table-cell--span2 span,
+.dh-wrapper .dh-table--no-border .table-cell--left span,
+.dh-wrapper .dh-table--no-border .table-cell--grouped span,
+.dh-wrapper .dh-table--no-border .table-cell--last span,
+.dh-wrapper .dh-table--no-border .table-cell--settingstoggle span,
+.dh-wrapper .dh-table--no-border .table-cell span,
+.dh-wrapper .dh-table--no-border .table-cell--description span {
+  padding: 1px;
+}
+.dh-wrapper .dh-table--border .table-cell--settingstoggle span:empty, .dh-wrapper .dh-table--no-border .table-cell--image span:empty, .dh-wrapper .dh-table--no-border .table-cell--span3 span:empty, .dh-wrapper .dh-table--no-border .table-cell--span2 span:empty, .dh-wrapper .dh-table--no-border .table-cell--left span:empty, .dh-wrapper .dh-table--no-border .table-cell--grouped span:empty, .dh-wrapper .dh-table--no-border .table-cell--last span:empty, .dh-wrapper .dh-table--no-border .table-cell--settingstoggle span:empty, .dh-wrapper .dh-table--no-border .table-cell span:empty, .dh-wrapper .dh-table--no-border .table-cell--description span:empty {
+  display: none;
+}
+.dh-wrapper .dh-table--border .table-cell--settingstoggle select, .dh-wrapper .dh-table--no-border .table-cell--image select, .dh-wrapper .dh-table--no-border .table-cell--span3 select, .dh-wrapper .dh-table--no-border .table-cell--span2 select, .dh-wrapper .dh-table--no-border .table-cell--left select, .dh-wrapper .dh-table--no-border .table-cell--grouped select, .dh-wrapper .dh-table--no-border .table-cell--last select, .dh-wrapper .dh-table--no-border .table-cell--settingstoggle select, .dh-wrapper .dh-table--no-border .table-cell select, .dh-wrapper .dh-table--no-border .table-cell--description select,
+.dh-wrapper .dh-table--border .table-cell--settingstoggle input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--image input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--span3 input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--span2 input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--left input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--grouped input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--last input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--settingstoggle input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--description input[type=text],
+.dh-wrapper .dh-table--border .table-cell--settingstoggle input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--image input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--span3 input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--span2 input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--left input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--grouped input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--last input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--settingstoggle input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--description input[type=number] {
+  height: 100%;
+  text-align: center !important;
+}
+.dh-wrapper .dh-table--no-border .table-row--head div[class*=cell]:first-child {
+  text-align: left;
+}
+.dh-wrapper .dh-table--no-border .table-row--head div[class*=cell]:not(:first-child) {
+  text-align: center;
+}
+.dh-wrapper .dh-table--no-border .table-cell--description {
+  grid-column: 1/-1;
+}
+.dh-wrapper .dh-table--border .table-row--grouped, .dh-wrapper .dh-table--border .table-row, .dh-wrapper .dh-field, .dh-wrapper .dh-textarea, .dh-wrapper .dh-table--border .table-row--head, .dh-wrapper .dh-table--border .table-row--unknown {
+  display: grid;
+  border-bottom: 1px solid black;
+}
+.dh-wrapper .dh-table--border .table-row--unknown {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.dh-wrapper .dh-table--border .table-row--head:first-child {
+  text-align: left;
+}
+.dh-wrapper .dh-table--border .table-row--head:not(:first-child) {
+  text-align: center;
+}
+.dh-wrapper .dh-table--border .table-cell--grouped, .dh-wrapper .dh-table--border .table-cell--span2, .dh-wrapper .dh-table--border .table-cell--left, .dh-wrapper .dh-table--border .table-cell, .dh-wrapper .dh-field__span, .dh-wrapper .dh-field__header, .dh-wrapper .dh-field__input, .dh-wrapper .dh-textarea__header, .dh-wrapper .dh-textarea__input, .dh-wrapper .dh-table--border .table-cell--last, .dh-wrapper .dh-table--no-border .table-cell--grouped {
+  border-right: 1px solid black !important;
+  overflow: hidden;
+}
+.dh-wrapper .dh-table--border .table-cell--grouped input[type=number], .dh-wrapper .dh-table--border .table-cell--span2 input[type=number], .dh-wrapper .dh-table--border .table-cell--left input[type=number], .dh-wrapper .dh-table--border .table-cell input[type=number], .dh-wrapper .dh-field__span input[type=number], .dh-wrapper .dh-field__header input[type=number], .dh-wrapper .dh-field__input input[type=number], .dh-wrapper .dh-textarea__header input[type=number], .dh-wrapper .dh-textarea__input input[type=number], .dh-wrapper .dh-table--border .table-cell--last input[type=number], .dh-wrapper .dh-table--no-border .table-cell--grouped input[type=number] {
+  height: 100%;
+}
+.dh-wrapper .dh-table--border .table-cell--grouped > span[name*=attr], .dh-wrapper .dh-table--border .table-cell--span2 > span[name*=attr], .dh-wrapper .dh-table--border .table-cell--left > span[name*=attr], .dh-wrapper .dh-table--border .table-cell > span[name*=attr], .dh-wrapper .dh-field__span > span[name*=attr], .dh-wrapper .dh-field__header > span[name*=attr], .dh-wrapper .dh-field__input > span[name*=attr], .dh-wrapper .dh-textarea__header > span[name*=attr], .dh-wrapper .dh-textarea__input > span[name*=attr], .dh-wrapper .dh-table--border .table-cell--last > span[name*=attr], .dh-wrapper .dh-table--no-border .table-cell--grouped > span[name*=attr] {
+  font-family: "Lusitana", serif;
+  font-size: 1.25rem;
+}
+.dh-wrapper .dh-table--border .table-cell--grouped:first-child, .dh-wrapper .dh-table--border .table-cell--span2:first-child, .dh-wrapper .dh-table--border .table-cell--left:first-child, .dh-wrapper .dh-table--border .table-cell:first-child, .dh-wrapper .dh-field__span:first-child, .dh-wrapper .dh-field__header:first-child, .dh-wrapper .dh-field__input:first-child, .dh-wrapper .dh-textarea__header:first-child, .dh-wrapper .dh-textarea__input:first-child, .dh-wrapper .dh-table--border .table-cell--last:first-child, .dh-wrapper .dh-table--no-border .table-cell--grouped:first-child {
+  text-align: left;
+}
+.dh-wrapper .dh-table--border .table-cell--grouped:not(:first-child), .dh-wrapper .dh-table--border .table-cell--span2:not(:first-child), .dh-wrapper .dh-table--border .table-cell--left:not(:first-child), .dh-wrapper .dh-table--border .table-cell:not(:first-child), .dh-wrapper .dh-field__span:not(:first-child), .dh-wrapper .dh-field__header:not(:first-child), .dh-wrapper .dh-field__input:not(:first-child), .dh-wrapper .dh-textarea__header:not(:first-child), .dh-wrapper .dh-textarea__input:not(:first-child), .dh-wrapper .dh-table--border .table-cell--last:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--grouped:not(:first-child) {
+  text-align: center;
+  -moz-text-align-last: center !important;
+  text-align-last: center !important;
+}
+.dh-wrapper .dh-table--border .table-cell--grouped, .dh-wrapper .dh-table--border .table-cell--last, .dh-wrapper .dh-table--no-border .table-cell--grouped {
+  border-right: 0;
+}
+.dh-wrapper .dh-table--border .table-cell--highlight {
+  font-weight: bold;
+}
+.dh-wrapper .dh-table--border .table-cell--description {
+  border-top: 1px dotted dimgrey;
+  grid-column: 1/-1;
+  font-size: 0.95em;
+  font-style: italic;
+}
+.dh-wrapper .dh-table--no-border .table-row--highlight, .dh-wrapper .dh-table--no-border .table-row--head, .dh-wrapper .dh-table--no-border .table-row {
+  display: grid;
+  grid-column: 1/-1;
+}
+.dh-wrapper .dh-table--border .table-cell--settingstoggle, .dh-wrapper .dh-table--no-border .table-cell--image, .dh-wrapper .dh-table--no-border .table-cell--span3, .dh-wrapper .dh-table--no-border .table-cell--span2, .dh-wrapper .dh-table--no-border .table-cell--left, .dh-wrapper .dh-table--no-border .table-cell--grouped, .dh-wrapper .dh-table--no-border .table-cell--last, .dh-wrapper .dh-table--no-border .table-cell--settingstoggle, .dh-wrapper .dh-table--no-border .table-cell, .dh-wrapper .dh-table--no-border .table-cell--description {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.dh-wrapper .dh-table--border .table-cell--settingstoggle:first-child, .dh-wrapper .dh-table--no-border .table-cell--image:first-child, .dh-wrapper .dh-table--no-border .table-cell--span3:first-child, .dh-wrapper .dh-table--no-border .table-cell--span2:first-child, .dh-wrapper .dh-table--no-border .table-cell--left:first-child, .dh-wrapper .dh-table--no-border .table-cell--grouped:first-child, .dh-wrapper .dh-table--no-border .table-cell--last:first-child, .dh-wrapper .dh-table--no-border .table-cell--settingstoggle:first-child, .dh-wrapper .dh-table--no-border .table-cell:first-child, .dh-wrapper .dh-table--no-border .table-cell--description:first-child {
+  text-align: left;
+  font-weight: bolder;
+  margin-block: auto;
+}
+.dh-wrapper .dh-table--border .table-cell--settingstoggle:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--image:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--span3:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--span2:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--left:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--grouped:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--last:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--settingstoggle:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--description:not(:first-child) {
+  text-align: center;
+  margin-block: auto;
+}
+.dh-wrapper .dh-table--border .table-cell--settingstoggle label, .dh-wrapper .dh-table--no-border .table-cell--image label, .dh-wrapper .dh-table--no-border .table-cell--span3 label, .dh-wrapper .dh-table--no-border .table-cell--span2 label, .dh-wrapper .dh-table--no-border .table-cell--left label, .dh-wrapper .dh-table--no-border .table-cell--grouped label, .dh-wrapper .dh-table--no-border .table-cell--last label, .dh-wrapper .dh-table--no-border .table-cell--settingstoggle label, .dh-wrapper .dh-table--no-border .table-cell label, .dh-wrapper .dh-table--no-border .table-cell--description label,
+.dh-wrapper .dh-table--border .table-cell--settingstoggle span,
+.dh-wrapper .dh-table--no-border .table-cell--image span,
+.dh-wrapper .dh-table--no-border .table-cell--span3 span,
+.dh-wrapper .dh-table--no-border .table-cell--span2 span,
+.dh-wrapper .dh-table--no-border .table-cell--left span,
+.dh-wrapper .dh-table--no-border .table-cell--grouped span,
+.dh-wrapper .dh-table--no-border .table-cell--last span,
+.dh-wrapper .dh-table--no-border .table-cell--settingstoggle span,
+.dh-wrapper .dh-table--no-border .table-cell span,
+.dh-wrapper .dh-table--no-border .table-cell--description span {
+  padding: 1px;
+}
+.dh-wrapper .dh-table--border .table-cell--settingstoggle span:empty, .dh-wrapper .dh-table--no-border .table-cell--image span:empty, .dh-wrapper .dh-table--no-border .table-cell--span3 span:empty, .dh-wrapper .dh-table--no-border .table-cell--span2 span:empty, .dh-wrapper .dh-table--no-border .table-cell--left span:empty, .dh-wrapper .dh-table--no-border .table-cell--grouped span:empty, .dh-wrapper .dh-table--no-border .table-cell--last span:empty, .dh-wrapper .dh-table--no-border .table-cell--settingstoggle span:empty, .dh-wrapper .dh-table--no-border .table-cell span:empty, .dh-wrapper .dh-table--no-border .table-cell--description span:empty {
+  display: none;
+}
+.dh-wrapper .dh-table--border .table-cell--settingstoggle select, .dh-wrapper .dh-table--no-border .table-cell--image select, .dh-wrapper .dh-table--no-border .table-cell--span3 select, .dh-wrapper .dh-table--no-border .table-cell--span2 select, .dh-wrapper .dh-table--no-border .table-cell--left select, .dh-wrapper .dh-table--no-border .table-cell--grouped select, .dh-wrapper .dh-table--no-border .table-cell--last select, .dh-wrapper .dh-table--no-border .table-cell--settingstoggle select, .dh-wrapper .dh-table--no-border .table-cell select, .dh-wrapper .dh-table--no-border .table-cell--description select,
+.dh-wrapper .dh-table--border .table-cell--settingstoggle input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--image input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--span3 input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--span2 input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--left input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--grouped input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--last input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--settingstoggle input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell input[type=text],
+.dh-wrapper .dh-table--no-border .table-cell--description input[type=text],
+.dh-wrapper .dh-table--border .table-cell--settingstoggle input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--image input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--span3 input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--span2 input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--left input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--grouped input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--last input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--settingstoggle input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell input[type=number],
+.dh-wrapper .dh-table--no-border .table-cell--description input[type=number] {
+  height: 100%;
+  text-align: center !important;
+}
+.dh-wrapper .dh-table--no-border .table-row--head div[class*=cell]:first-child {
+  text-align: left;
+}
+.dh-wrapper .dh-table--no-border .table-row--head div[class*=cell]:not(:first-child) {
+  text-align: center;
+}
+.dh-wrapper .dh-table--no-border .table-cell--description {
+  grid-column: 1/-1;
+}
+.dh-wrapper .dh-table--border .table-row--grouped, .dh-wrapper .dh-table--border .table-row, .dh-wrapper .dh-field, .dh-wrapper .dh-textarea, .dh-wrapper .dh-table--border .table-row--unknown, .dh-wrapper .dh-table--border .table-row--head {
+  display: grid;
+  border-bottom: 1px solid black;
+}
+.dh-wrapper .dh-table--border .table-row--unknown {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.dh-wrapper .dh-table--border .table-row--head:first-child {
+  text-align: left;
+}
+.dh-wrapper .dh-table--border .table-row--head:not(:first-child) {
+  text-align: center;
+}
+.dh-wrapper .dh-table--border .table-cell--grouped, .dh-wrapper .dh-table--border .table-cell--span2, .dh-wrapper .dh-table--border .table-cell--left, .dh-wrapper .dh-table--border .table-cell, .dh-wrapper .dh-field__span, .dh-wrapper .dh-field__header, .dh-wrapper .dh-field__input, .dh-wrapper .dh-textarea__header, .dh-wrapper .dh-textarea__input, .dh-wrapper .dh-table--border .table-cell--last, .dh-wrapper .dh-table--no-border .table-cell--grouped {
+  border-right: 1px solid black !important;
+  overflow: hidden;
+}
+.dh-wrapper .dh-table--border .table-cell--grouped input[type=number], .dh-wrapper .dh-table--border .table-cell--span2 input[type=number], .dh-wrapper .dh-table--border .table-cell--left input[type=number], .dh-wrapper .dh-table--border .table-cell input[type=number], .dh-wrapper .dh-field__span input[type=number], .dh-wrapper .dh-field__header input[type=number], .dh-wrapper .dh-field__input input[type=number], .dh-wrapper .dh-textarea__header input[type=number], .dh-wrapper .dh-textarea__input input[type=number], .dh-wrapper .dh-table--border .table-cell--last input[type=number], .dh-wrapper .dh-table--no-border .table-cell--grouped input[type=number] {
+  height: 100%;
+}
+.dh-wrapper .dh-table--border .table-cell--grouped > span[name*=attr], .dh-wrapper .dh-table--border .table-cell--span2 > span[name*=attr], .dh-wrapper .dh-table--border .table-cell--left > span[name*=attr], .dh-wrapper .dh-table--border .table-cell > span[name*=attr], .dh-wrapper .dh-field__span > span[name*=attr], .dh-wrapper .dh-field__header > span[name*=attr], .dh-wrapper .dh-field__input > span[name*=attr], .dh-wrapper .dh-textarea__header > span[name*=attr], .dh-wrapper .dh-textarea__input > span[name*=attr], .dh-wrapper .dh-table--border .table-cell--last > span[name*=attr], .dh-wrapper .dh-table--no-border .table-cell--grouped > span[name*=attr] {
+  font-family: "Lusitana", serif;
+  font-size: 1.25rem;
+}
+.dh-wrapper .dh-table--border .table-cell--grouped:first-child, .dh-wrapper .dh-table--border .table-cell--span2:first-child, .dh-wrapper .dh-table--border .table-cell--left:first-child, .dh-wrapper .dh-table--border .table-cell:first-child, .dh-wrapper .dh-field__span:first-child, .dh-wrapper .dh-field__header:first-child, .dh-wrapper .dh-field__input:first-child, .dh-wrapper .dh-textarea__header:first-child, .dh-wrapper .dh-textarea__input:first-child, .dh-wrapper .dh-table--border .table-cell--last:first-child, .dh-wrapper .dh-table--no-border .table-cell--grouped:first-child {
+  text-align: left;
+}
+.dh-wrapper .dh-table--border .table-cell--grouped:not(:first-child), .dh-wrapper .dh-table--border .table-cell--span2:not(:first-child), .dh-wrapper .dh-table--border .table-cell--left:not(:first-child), .dh-wrapper .dh-table--border .table-cell:not(:first-child), .dh-wrapper .dh-field__span:not(:first-child), .dh-wrapper .dh-field__header:not(:first-child), .dh-wrapper .dh-field__input:not(:first-child), .dh-wrapper .dh-textarea__header:not(:first-child), .dh-wrapper .dh-textarea__input:not(:first-child), .dh-wrapper .dh-table--border .table-cell--last:not(:first-child), .dh-wrapper .dh-table--no-border .table-cell--grouped:not(:first-child) {
+  text-align: center;
+  -moz-text-align-last: center !important;
+  text-align-last: center !important;
+}
+.dh-wrapper .dh-table--border .table-cell--grouped, .dh-wrapper .dh-table--border .table-cell--last, .dh-wrapper .dh-table--no-border .table-cell--grouped {
+  border-right: 0;
+}
+.dh-wrapper .dh-table--border .table-cell--highlight {
+  font-weight: bold;
+}
+.dh-wrapper .dh-table--border .table-cell--description {
+  border-top: 1px dotted dimgrey;
+  grid-column: 1/-1;
+  font-size: 0.95em;
+  font-style: italic;
+}
+.dh-wrapper .dh-grid-template1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.dh-wrapper .dh-grid-template-settings {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+}
+.dh-wrapper .dh-grid-template1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.dh-wrapper .dh-grid-template2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.dh-wrapper .dh-grid-col-2 {
+  grid-column: span 2;
+}
+.dh-wrapper .dh-grid-row-2 {
+  grid-row: span 2;
+}
+.dh-wrapper .dh-grid-col-3 {
+  grid-column: span 3;
+}
+.dh-wrapper .dh-grid-row-3 {
+  grid-row: span 3;
+}
+.dh-wrapper .dh-grid-col-4 {
+  grid-column: span 4;
+}
+.dh-wrapper .dh-grid-row-4 {
+  grid-row: span 4;
+}
+.dh-wrapper .dh-grid-col-5 {
+  grid-column: span 5;
+}
+.dh-wrapper .dh-grid-row-5 {
+  grid-row: span 5;
+}
+.dh-wrapper .dh-grid-col-6 {
+  grid-column: span 6;
+}
+.dh-wrapper .dh-grid-row-6 {
+  grid-row: span 6;
+}
+.dh-wrapper .dh-grid-col-1-offset {
+  grid-column: 1/-1;
+}
+.dh-wrapper .dh-skilltable--no-border .table-row {
+  grid-template-columns: 0.9fr 0.7fr 0.4fr 0.4fr;
+}
+.dh-wrapper .dh-skilltable--no-border .table-row--head {
+  grid-template-columns: 0.9fr 0.7fr 0.4fr 0.4fr;
+}
+.dh-wrapper .dh-skilltable--no-border .table-row--highlight {
+  grid-template-columns: 0.9fr 0.7fr 0.4fr 0.4fr;
+}
+.dh-wrapper .dh-skilltable--border .table-row {
+  grid-template-columns: 0.9fr 0.7fr 0.4fr 0.4fr;
+}
+.dh-wrapper .dh-skilltable--border .table-row--head {
+  grid-template-columns: 0.9fr 0.7fr 0.4fr 0.4fr;
+}
+.dh-wrapper .dh-skilltable--border .table-row--unknown {
+  grid-template-columns: 0.9fr 0.7fr 0.4fr 0.4fr;
+}
+.dh-wrapper .dh-talenttable--no-border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-talenttable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-talenttable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-talenttable--border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-talenttable--border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-talenttable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-traittable--no-border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-traittable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-traittable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-traittable--border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-traittable--border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-traittable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-woundstable--no-border .table-row {
+  grid-template-columns: 1.5rem 1fr 5rem 3rem;
+}
+.dh-wrapper .dh-woundstable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 5rem 3rem;
+}
+.dh-wrapper .dh-woundstable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1fr 5rem 3rem;
+}
+.dh-wrapper .dh-woundstable--border .table-row {
+  grid-template-columns: 1.5rem 1fr 5rem 3rem;
+}
+.dh-wrapper .dh-woundstable--border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 5rem 3rem;
+}
+.dh-wrapper .dh-woundstable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1fr 5rem 3rem;
+}
+.dh-wrapper .dh-corruptiontable--no-border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-corruptiontable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-corruptiontable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-corruptiontable--border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-corruptiontable--border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-corruptiontable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-insanitytable--no-border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-insanitytable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-insanitytable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-insanitytable--border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-insanitytable--border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-insanitytable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-criticalinjurytable--no-border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-criticalinjurytable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-criticalinjurytable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-criticalinjurytable--border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-criticalinjurytable--border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-criticalinjurytable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-armourtable--no-border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-armourtable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-armourtable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-armourtable--border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-armourtable--border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-armourtable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-armourmodtable--no-border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-armourmodtable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-armourmodtable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-armourmodtable--border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-armourmodtable--border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-armourmodtable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-weapontable--no-border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 0.75fr 4rem;
+}
+.dh-wrapper .dh-weapontable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 0.75fr 4rem;
+}
+.dh-wrapper .dh-weapontable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 0.75fr 4rem;
+}
+.dh-wrapper .dh-weapontable--border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 0.75fr 4rem;
+}
+.dh-wrapper .dh-weapontable--border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 0.75fr 4rem;
+}
+.dh-wrapper .dh-weapontable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 0.75fr 4rem;
+}
+.dh-wrapper .dh-psychictable--no-border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 5rem;
+}
+.dh-wrapper .dh-psychictable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 5rem;
+}
+.dh-wrapper .dh-psychictable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 5rem;
+}
+.dh-wrapper .dh-psychictable--border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 5rem;
+}
+.dh-wrapper .dh-psychictable--border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 5rem;
+}
+.dh-wrapper .dh-psychictable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 5rem;
+}
+.dh-wrapper .dh-weaponmodtable--no-border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-weaponmodtable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-weaponmodtable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-weaponmodtable--border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-weaponmodtable--border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-weaponmodtable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-attackspecialtable--no-border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-attackspecialtable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-attackspecialtable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-attackspecialtable--border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-attackspecialtable--border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-attackspecialtable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1.5fr 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-criticaltable--no-border .table-row {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-criticaltable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-criticaltable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-criticaltable--border .table-row {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-criticaltable--border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-criticaltable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-cybernetictable--no-border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-cybernetictable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-cybernetictable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-cybernetictable--border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-cybernetictable--border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-cybernetictable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1.5fr 1fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-forcefieldtable--no-border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 0.75fr 0.75fr 0.75fr 4rem;
+}
+.dh-wrapper .dh-forcefieldtable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 0.75fr 0.75fr 0.75fr 4rem;
+}
+.dh-wrapper .dh-forcefieldtable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1.5fr 0.75fr 0.75fr 0.75fr 4rem;
+}
+.dh-wrapper .dh-forcefieldtable--border .table-row {
+  grid-template-columns: 1.5rem 1.5fr 0.75fr 0.75fr 0.75fr 4rem;
+}
+.dh-wrapper .dh-forcefieldtable--border .table-row--head {
+  grid-template-columns: 1.5rem 1.5fr 0.75fr 0.75fr 0.75fr 4rem;
+}
+.dh-wrapper .dh-forcefieldtable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1.5fr 0.75fr 0.75fr 0.75fr 4rem;
+}
+.dh-wrapper .dh-experiencetable--no-border .table-row {
+  grid-template-columns: 1fr 0.25fr;
+}
+.dh-wrapper .dh-experiencetable--no-border .table-row--head {
+  grid-template-columns: 1fr 0.25fr;
+}
+.dh-wrapper .dh-experiencetable--no-border .table-row--highlight {
+  grid-template-columns: 1fr 0.25fr;
+}
+.dh-wrapper .dh-experiencetable--border .table-row {
+  grid-template-columns: 1fr 0.25fr;
+}
+.dh-wrapper .dh-experiencetable--border .table-row--head {
+  grid-template-columns: 1fr 0.25fr;
+}
+.dh-wrapper .dh-experiencetable--border .table-row--unknown {
+  grid-template-columns: 1fr 0.25fr;
+}
+.dh-wrapper .dh-storageloctable--no-border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-storageloctable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-storageloctable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-storageloctable--border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-storageloctable--border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-storageloctable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-storagegeartable--no-border .table-row {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-storagegeartable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-storagegeartable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-storagegeartable--border .table-row {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-storagegeartable--border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-storagegeartable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem;
+}
+.dh-wrapper .dh-backpacktable--no-border .table-row {
+  grid-template-columns: 1fr 0.5fr;
+}
+.dh-wrapper .dh-backpacktable--no-border .table-row--head {
+  grid-template-columns: 1fr 0.5fr;
+}
+.dh-wrapper .dh-backpacktable--no-border .table-row--highlight {
+  grid-template-columns: 1fr 0.5fr;
+}
+.dh-wrapper .dh-backpacktable--border .table-row {
+  grid-template-columns: 1fr 0.5fr;
+}
+.dh-wrapper .dh-backpacktable--border .table-row--head {
+  grid-template-columns: 1fr 0.5fr;
+}
+.dh-wrapper .dh-backpacktable--border .table-row--unknown {
+  grid-template-columns: 1fr 0.5fr;
+}
+.dh-wrapper .dh-ammotable--no-border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-ammotable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-ammotable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-ammotable--border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-ammotable--border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-ammotable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-bonusestable--no-border .table-row {
+  grid-template-columns: 1fr 0.5fr 3rem;
+}
+.dh-wrapper .dh-bonusestable--no-border .table-row--head {
+  grid-template-columns: 1fr 0.5fr 3rem;
+}
+.dh-wrapper .dh-bonusestable--no-border .table-row--highlight {
+  grid-template-columns: 1fr 0.5fr 3rem;
+}
+.dh-wrapper .dh-bonusestable--border .table-row {
+  grid-template-columns: 1fr 0.5fr 3rem;
+}
+.dh-wrapper .dh-bonusestable--border .table-row--head {
+  grid-template-columns: 1fr 0.5fr 3rem;
+}
+.dh-wrapper .dh-bonusestable--border .table-row--unknown {
+  grid-template-columns: 1fr 0.5fr 3rem;
+}
+.dh-wrapper .dh-aptitudetable--no-border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-aptitudetable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-aptitudetable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-aptitudetable--border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-aptitudetable--border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-aptitudetable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-activeeffectstable--no-border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-activeeffectstable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-activeeffectstable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-activeeffectstable--border .table-row {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-activeeffectstable--border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-activeeffectstable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1fr 3rem;
+}
+.dh-wrapper .dh-journaltable--no-border .table-row {
+  grid-template-columns: 1.5rem 2fr 0.75fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-journaltable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 2fr 0.75fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-journaltable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 2fr 0.75fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-journaltable--border .table-row {
+  grid-template-columns: 1.5rem 2fr 0.75fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-journaltable--border .table-row--head {
+  grid-template-columns: 1.5rem 2fr 0.75fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-journaltable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 2fr 0.75fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-peerenemytable--no-border .table-row {
+  grid-template-columns: 1.5rem 2fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-peerenemytable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 2fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-peerenemytable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 2fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-peerenemytable--border .table-row {
+  grid-template-columns: 1.5rem 2fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-peerenemytable--border .table-row--head {
+  grid-template-columns: 1.5rem 2fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-peerenemytable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 2fr 0.75fr 3rem;
+}
+.dh-wrapper .dh-geartable--no-border .table-row {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-geartable--no-border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-geartable--no-border .table-row--highlight {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-geartable--border .table-row {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-geartable--border .table-row--head {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-geartable--border .table-row--unknown {
+  grid-template-columns: 1.5rem 1fr 1fr 3rem 3rem;
+}
+.dh-wrapper .dh-attackprompttable--no-border .table-row {
+  grid-template-columns: 2rem 1fr 3rem;
+}
+.dh-wrapper .dh-attackprompttable--no-border .table-row--head {
+  grid-template-columns: 2rem 1fr 3rem;
+}
+.dh-wrapper .dh-attackprompttable--no-border .table-row--highlight {
+  grid-template-columns: 2rem 1fr 3rem;
+}
+.dh-wrapper .dh-attackprompttable--border .table-row {
+  grid-template-columns: 2rem 1fr 3rem;
+}
+.dh-wrapper .dh-attackprompttable--border .table-row--head {
+  grid-template-columns: 2rem 1fr 3rem;
+}
+.dh-wrapper .dh-attackprompttable--border .table-row--unknown {
+  grid-template-columns: 2rem 1fr 3rem;
+}
+.dh-wrapper .dh-table h1 {
+  grid-column: 1/-1;
+}
+.dh-wrapper .dh-table .table-roll {
+  text-align: left !important;
+}
+.dh-wrapper .dh-table .table-roll span {
+  text-align: left;
+}
+.dh-wrapper .dh-table--no-border {
+  min-height: 50px;
+}
+.dh-wrapper .dh-table--no-border .table-row--highlight {
+  background: rgba(36, 107, 131, 0.1);
+  grid-column: 1/-1;
+  padding: 0;
+}
+.dh-wrapper .dh-table--no-border .table-cell--description span {
+  text-align: left;
+}
+.dh-wrapper .dh-table--no-border .table-cell--settingstoggle + .dh-wrapper .dh-table--no-border .table-cell--grouped {
+  grid-column-start: 2;
+}
+.dh-wrapper .dh-table--no-border .table-cell--grouped {
+  margin-top: 1pt;
+  font-weight: bold;
+  text-align: center !important;
+  -moz-text-align-last: center !important;
+  text-align-last: center !important;
+  text-indent: -1.5rem;
+  text-transform: uppercase;
+}
+.dh-wrapper .dh-table--no-border .table-cell--left {
+  text-align: left !important;
+}
+.dh-wrapper .dh-table--no-border .table-cell--span2 {
+  grid-column: span 2;
+}
+.dh-wrapper .dh-table--no-border .table-cell--span3 {
+  grid-column: span 3;
+}
+.dh-wrapper .dh-table--no-border .table-cell--image {
+  padding-top: 3px;
+}
+.dh-wrapper .dh-table--border {
+  min-height: 50px;
+}
+.dh-wrapper .dh-table--border .table-row--grouped {
+  grid-template-columns: 1rem 1fr;
+  background: rgba(36, 107, 131, 0.1);
+}
+.dh-wrapper .dh-table--border .table-cell--left {
+  text-align: left !important;
+}
+.dh-wrapper .dh-table--border .table-cell--span2 {
+  grid-column: span 2;
+}
+.dh-wrapper .dh-table--border .table-cell--grouped {
+  margin-top: 1pt;
+  font-weight: bold;
+  text-align: center !important;
+  -moz-text-align-last: center !important;
+  text-align-last: center !important;
+  text-indent: -1.5rem;
+  text-transform: uppercase;
+}
+.dh-wrapper .dh-table--border .table-cell--settingstoggle + .dh-wrapper .dh-table--border .table-cell--grouped {
+  grid-column-start: 2;
+}
+.dh-wrapper .dh-table--border .table-cell--checkbox {
+  margin: 8px;
+}
+.dh-wrapper .dh-controls {
+  grid-column: span 2;
+}
+.dh-wrapper .dh-controls__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.25rem;
+  margin: 0.25rem;
+}
+.dh-wrapper .dh-settingswrapper {
+  grid-column: span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.dh-wrapper .dh-settingswrapper > * {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.dh-wrapper .dh-controls button {
+  background: rgba(44, 76, 87, 0.125);
+  text-align: center;
+}
+.dh-wrapper .dh-panel, .dh-wrapper .dh-navigation, .dh-wrapper .dh-panel--inquisition {
+  position: relative;
+  padding: 2px;
+  background: url("../images/40k_back.png") #eff2f1 center/cover;
+  border: 3px solid transparent;
+  -o-border-image: url("../images/panel_border.png") 8/2/0 repeat;
+  border-image: url("../images/panel_border.png") 8/2/0 repeat;
+}
+.dh-wrapper .dh-panel.spacer, .dh-wrapper .spacer.dh-navigation, .dh-wrapper .spacer.dh-panel--inquisition {
+  padding-bottom: 5pt;
+}
+.dh-wrapper .dh-panel--inquisition {
+  background: url("../images/inqu_watermark.png") center/70% no-repeat, url("../images/40k_back.png") center/cover;
+  grid-column: span 1;
+  grid-row: span 2;
+  min-height: 150px;
+}
+.dh-wrapper .dh-panel h1, .dh-wrapper .dh-navigation h1, .dh-wrapper .dh-panel--inquisition h1 {
+  border-bottom: 1px solid black;
+}
+.dh-wrapper .dh-panel h1.dh-panel__header, .dh-wrapper .dh-navigation h1.dh-panel__header, .dh-wrapper .dh-panel--inquisition h1.dh-panel__header {
+  font-size: 12pt;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.dh-wrapper .dh-panel h1.dh-panel__header .dh-trait-toggle__span, .dh-wrapper .dh-navigation h1.dh-panel__header .dh-trait-toggle__span, .dh-wrapper .dh-panel--inquisition h1.dh-panel__header .dh-trait-toggle__span {
+  font-size: 12pt;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.dh-wrapper .dh-panel h1.span-4, .dh-wrapper .dh-navigation h1.span-4, .dh-wrapper .dh-panel--inquisition h1.span-4 {
+  grid-column: span 4;
+}
+.dh-wrapper .dh-divider {
+  width: 100%;
+  height: 10px;
+  grid-column: 1/-1;
+  background: url("../images/divider.png") no-repeat center/100% 100%;
+}
+.dh-wrapper .dh-material, .dh-wrapper .dh-settings__label--add, .dh-wrapper button.dh-vocalise[type=roll], .dh-wrapper .dh-control-button__span {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-grid;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+.dh-wrapper .dh-control-button {
+  cursor: pointer;
+}
+.dh-wrapper .dh-control-button .active {
+  opacity: 1;
+}
+.dh-wrapper .dh-control-button:hover {
+  opacity: 1;
+}
+.dh-wrapper .dh-control-button__disabled {
+  cursor: unset;
+  opacity: 1;
+  text-decoration: line-through;
+}
+.dh-wrapper .dh-control-button__label {
+  padding-top: 1px;
+  padding-left: 5px;
+  vertical-align: text-top;
+  opacity: 0.5;
+  font-size: 12px;
+  line-height: 1;
+  display: inline-grid;
+  white-space: nowrap;
+  word-wrap: normal;
+  -webkit-font-smoothing: antialiased;
+}
+.dh-wrapper .dh-control-button__span {
+  padding-top: 3px;
+  padding-left: 2px;
+  opacity: 0.5;
+}
+.dh-wrapper .dh-trait-toggle {
+  cursor: pointer;
+  opacity: 1;
+}
+.dh-wrapper .dh-trait-toggle:hover {
+  opacity: 0.5;
+}
+.dh-wrapper .dh-trait-toggle__span {
+  text-align: left;
+}
+.dh-wrapper button[type=roll] {
+  margin: 0;
+  cursor: pointer;
+}
+.dh-wrapper button[type=roll]:hover {
+  color: red;
+}
+.dh-wrapper button.dh-vocalise[type=roll] {
+  opacity: 0.5;
+  text-align: center;
+  padding-top: 3px;
+}
+.dh-wrapper button.dh-vocalise[type=roll]:hover {
+  opacity: 1;
+}
+.dh-wrapper button.dh-material[type=action]:hover, .dh-wrapper button[type=action].dh-settings__label--add:hover, .dh-wrapper button[type=action].dh-control-button__span:hover, .dh-wrapper button[type=action].dh-vocalise[type=roll]:hover {
+  color: red;
+}
+.dh-wrapper input[type=date],
+.dh-wrapper input[type=text],
+.dh-wrapper input[type=number],
+.dh-wrapper textarea,
+.dh-wrapper select {
+  padding: 0;
+  background: rgba(36, 107, 131, 0.125);
+  color: #000;
+  vertical-align: baseline;
+  height: 100%;
+}
+.dh-wrapper input[type=date]:focus, .dh-wrapper input[type=date]:active, .dh-wrapper input[type=date]:hover,
+.dh-wrapper input[type=text]:focus,
+.dh-wrapper input[type=text]:active,
+.dh-wrapper input[type=text]:hover,
+.dh-wrapper input[type=number]:focus,
+.dh-wrapper input[type=number]:active,
+.dh-wrapper input[type=number]:hover,
+.dh-wrapper textarea:focus,
+.dh-wrapper textarea:active,
+.dh-wrapper textarea:hover,
+.dh-wrapper select:focus,
+.dh-wrapper select:active,
+.dh-wrapper select:hover {
+  background: rgba(51, 129, 155, 0.125);
+  outline: 0;
+}
+.dh-wrapper .error {
+  background: rgba(255, 0, 0, 0.1);
+}
+.dh-wrapper .success {
+  background: rgba(104, 195, 163, 0.3);
+}
+.dh-wrapper input[disabled],
+.dh-wrapper select[disabled],
+.dh-wrapper textarea[disabled],
+.dh-wrapper input[disabled],
+.dh-wrapper select[disabled],
+.dh-wrapper textarea[disabled],
+.dh-wrapper input[readonly],
+.dh-wrapper select[readonly],
+.dh-wrapper textarea[readonly] {
+  background-color: unset !important;
+  border-color: unset !important;
+  cursor: unset !important;
+  color: black !important;
+}
+.dh-wrapper input[disabled] > option,
+.dh-wrapper select[disabled] > option,
+.dh-wrapper textarea[disabled] > option,
+.dh-wrapper input[disabled] > option,
+.dh-wrapper select[disabled] > option,
+.dh-wrapper textarea[disabled] > option,
+.dh-wrapper input[readonly] > option,
+.dh-wrapper select[readonly] > option,
+.dh-wrapper textarea[readonly] > option {
+  color: black !important;
+}
+.dh-wrapper textarea {
+  text-align: left;
+}
+.dh-wrapper input[type=number] {
+  text-align: center;
+}
+.dh-wrapper input[type=checkbox] {
+  margin: auto;
+  width: 1em;
+}
+.dh-wrapper select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-text-overflow: "";
+  text-overflow: "";
+  cursor: pointer;
+}
+.dh-wrapper button {
+  cursor: pointer;
+  text-shadow: none;
+}
+.dh-wrapper .dh-field,
+.dh-wrapper .dh-textarea {
+  border-bottom: 1px solid black;
+}
+.dh-wrapper .dh-field:last-child,
+.dh-wrapper .dh-textarea:last-child {
+  border-bottom: 0;
+}
+.dh-wrapper .dh-field__span,
+.dh-wrapper .dh-textarea__span {
+  font-family: "Lusitana", serif;
+}
+.dh-wrapper .dh-field__wrapper,
+.dh-wrapper .dh-textarea__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.dh-wrapper .dh-field__wrapper > *,
+.dh-wrapper .dh-textarea__wrapper > * {
+  border-bottom: 1px solid #000 !important;
+}
+.dh-wrapper .dh-field__wrapper > *:first-child,
+.dh-wrapper .dh-textarea__wrapper > *:first-child {
+  border-right: 1px solid #000 !important;
+}
+.dh-wrapper .dh-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+.dh-wrapper .dh-field__header {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.dh-wrapper .dh-field__header--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.dh-wrapper .dh-field__header--flex > span {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+.dh-wrapper .dh-field__header--flex > button {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+}
+.dh-wrapper .dh-field__input {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.dh-wrapper .dh-field__input.check {
+  background: rgba(36, 107, 131, 0.125);
+}
+.dh-wrapper .dh-field__input input[type=checkbox] {
+  vertical-align: middle;
+  margin: 2px;
+}
+.dh-wrapper .dh-field__span {
+  text-align: center;
+}
+.dh-wrapper .dh-field__image {
+  height: 25px;
+  width: 25px;
+  border: none;
+}
+.dh-wrapper .dh-textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+.dh-wrapper .dh-textarea__header {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.dh-wrapper .dh-textarea__textarea {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.dh-wrapper .dh-header {
+  padding: 0;
+  font-size: 12pt;
+}
+.dh-wrapper .dh-header__borderless {
+  border: none !important;
+}
+.dh-wrapper .dh-header__logo {
+  background: url("../images/aquilla.png") no-repeat right;
+  background-size: contain;
+}
+.dh-wrapper .dh-header__logo-image {
+  height: 100px;
+  border: 0;
+  padding: 0.5rem;
+}
+.dh-wrapper .dh-header__logo-image-small {
+  height: 50px;
+  border: 0;
+  margin-right: -50px;
+}
+.dh-wrapper .dh-header__prompt {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: auto;
+  padding: 0 1.5em 0 0;
+}
+.dh-wrapper .dh-header__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: auto;
+  padding: 0 1.5em 0.5em;
+}
+.dh-wrapper .dh-header__item-wrapper, .dh-wrapper .dh-header__item-wrapper--text-area, .dh-wrapper .dh-header__item-wrapper--span-4, .dh-wrapper .dh-header__item-wrapper--mementos, .dh-wrapper .dh-header__item-wrapper--superstition, .dh-wrapper .dh-header__item-wrapper--notes, .dh-wrapper .dh-header__item-wrapper--3-span-2, .dh-wrapper .dh-header__item-wrapper--span-3, .dh-wrapper .dh-header__item-wrapper--quirks, .dh-wrapper .dh-header__item-wrapper--span-2, .dh-wrapper .dh-header__item-wrapper--homeworld, .dh-wrapper .dh-header__item-wrapper--background, .dh-wrapper .dh-header__item-wrapper--role, .dh-wrapper .dh-header__item-wrapper--divination, .dh-wrapper .dh-header__item-wrapper--elite, .dh-wrapper .dh-header__item-wrapper--age, .dh-wrapper .dh-header__item-wrapper--gender, .dh-wrapper .dh-header__item-wrapper--build, .dh-wrapper .dh-header__item-wrapper--complexion, .dh-wrapper .dh-header__item-wrapper--hair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  min-width: 0;
+  border-bottom: 1px solid black;
+}
+.dh-wrapper .dh-header__item-wrapper--span-2, .dh-wrapper .dh-header__item-wrapper--homeworld, .dh-wrapper .dh-header__item-wrapper--background, .dh-wrapper .dh-header__item-wrapper--role, .dh-wrapper .dh-header__item-wrapper--divination, .dh-wrapper .dh-header__item-wrapper--elite {
+  grid-column: span 2;
+}
+.dh-wrapper .dh-header__item-wrapper--span-3, .dh-wrapper .dh-header__item-wrapper--quirks {
+  grid-column: span 3;
+}
+.dh-wrapper .dh-header__item-wrapper--3-span-2 {
+  grid-column: 3/span 2;
+}
+.dh-wrapper .dh-header__item-wrapper--span-4, .dh-wrapper .dh-header__item-wrapper--mementos, .dh-wrapper .dh-header__item-wrapper--superstition, .dh-wrapper .dh-header__item-wrapper--notes {
+  grid-column: span 4;
+}
+.dh-wrapper .dh-header__item-wrapper--text-area {
+  grid-column: span 4;
+  grid-row: span 2;
+  min-height: 150px;
+  border-bottom: 0;
+}
+.dh-wrapper .dh-header__title {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin: auto;
+  padding: 0.25rem;
+  font-size: 12pt;
+  text-align: center;
+  text-transform: uppercase;
+}
+.dh-wrapper .dh-header__subtitle {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin: auto;
+  font-size: 11pt;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: -7px;
+}
+.dh-wrapper .dh-header__textarea, .dh-wrapper .dh-header__select, .dh-wrapper .dh-header__input {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  min-width: 0;
+  max-width: 100%;
+  padding: 0.25rem;
+}
+.dh-wrapper .dh-header__display {
+  margin: auto;
+}
+.dh-wrapper .dh-header__textarea, .dh-wrapper .dh-header__select, .dh-wrapper .dh-header__input {
+  height: 100% !important;
+}
+.dh-wrapper .tab.active {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0;
+}
+.dh-wrapper .dh-body {
+  grid-column: span 6;
+}
+.dh-wrapper .dh-navigation {
+  grid-column: span 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.dh-wrapper .dh-navigation label {
+  width: auto;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.dh-wrapper .dh-navigation label input {
+  display: none;
+}
+.dh-wrapper .dh-navigation__item-left {
+  margin-right: auto !important;
+}
+.dh-wrapper .dh-navigation__item a {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid rgba(36, 107, 131, 0.125);
+  border-radius: 5px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.dh-wrapper .dh-navigation__item a.active {
+  background: rgba(36, 107, 131, 0.125);
+  border: 1px solid rgba(20, 58, 71, 0.125);
+}
+.dh-wrapper .dh-settings, .dh-wrapper .dh-settings--large, .dh-wrapper .dh-settings--noborder, .dh-wrapper .dh-settings--border {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-top: 2px dashed #404040;
+  background: rgba(195, 223, 241, 0.125);
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+}
+.dh-wrapper .dh-settings input.dh-settings__input[type=text], .dh-wrapper .dh-settings--large input.dh-settings__input[type=text], .dh-wrapper .dh-settings--noborder input.dh-settings__input[type=text], .dh-wrapper .dh-settings--border input.dh-settings__input[type=text],
+.dh-wrapper .dh-settings input.dh-settings__input[type=number],
+.dh-wrapper .dh-settings--large input.dh-settings__input[type=number],
+.dh-wrapper .dh-settings--noborder input.dh-settings__input[type=number],
+.dh-wrapper .dh-settings--border input.dh-settings__input[type=number],
+.dh-wrapper .dh-settings textarea.dh-settings__textarea,
+.dh-wrapper .dh-settings--large textarea.dh-settings__textarea,
+.dh-wrapper .dh-settings--noborder textarea.dh-settings__textarea,
+.dh-wrapper .dh-settings--border textarea.dh-settings__textarea,
+.dh-wrapper .dh-settings select.dh-settings__select,
+.dh-wrapper .dh-settings--large select.dh-settings__select,
+.dh-wrapper .dh-settings--noborder select.dh-settings__select,
+.dh-wrapper .dh-settings--border select.dh-settings__select {
+  background-color: rgba(36, 107, 131, 0.125);
+  color: #000;
+  border-radius: 3px;
+  text-align: center;
+}
+.dh-wrapper .dh-settings--border {
+  gap: 0;
+}
+.dh-wrapper .dh-settings--border .clean {
+  border-top: none;
+}
+.dh-wrapper .dh-settings--border .dh-settings__row--xlarge, .dh-wrapper .dh-settings--border .dh-settings__row--large, .dh-wrapper .dh-settings--border .dh-settings__row, .dh-wrapper .dh-settings--border .dh-settings__row--talent, .dh-wrapper .dh-settings--border .dh-settings__row--trait, .dh-wrapper .dh-settings--border .dh-settings__row--skillinit, .dh-wrapper .dh-settings--border .dh-settings__row--talentinit, .dh-wrapper .dh-settings--border .dh-settings__row--traitinit, .dh-wrapper .dh-settings--border .dh-settings__row--skill, .dh-wrapper .dh-settings--border .dh-settings__row--invert, .dh-wrapper .dh-settings--border .dh-settings__row--characteristics, .dh-wrapper .dh-settings--border .dh-settings__row--span-even, .dh-wrapper .dh-settings--border .dh-settings__row--span, .dh-wrapper .dh-settings--border .dh-settings__row--label {
+  border-bottom: 1px solid black;
+}
+.dh-wrapper .dh-settings h2, .dh-wrapper .dh-settings--large h2, .dh-wrapper .dh-settings--noborder h2, .dh-wrapper .dh-settings--border h2 {
+  grid-column: 1/-1;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lusitana", serif;
+  border-bottom: 1px solid black;
+}
+.dh-wrapper .dh-settings h2 :first-child, .dh-wrapper .dh-settings--large h2 :first-child, .dh-wrapper .dh-settings--noborder h2 :first-child, .dh-wrapper .dh-settings--border h2 :first-child {
+  margin-top: -3pt;
+}
+.dh-wrapper .dh-settings h2:not(:first-child), .dh-wrapper .dh-settings--large h2:not(:first-child), .dh-wrapper .dh-settings--noborder h2:not(:first-child), .dh-wrapper .dh-settings--border h2:not(:first-child) {
+  margin-top: 5pt;
+}
+.dh-wrapper .dh-settings--noborder {
+  border: 0;
+}
+.dh-wrapper .dh-settings__header {
+  margin-top: 0.5rem;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+.dh-wrapper .dh-settings__header:not(:first-child) {
+  text-align: center;
+}
+.dh-wrapper .dh-settings--large {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.dh-wrapper .dh-settings__row, .dh-wrapper .dh-settings__row--talent, .dh-wrapper .dh-settings__row--trait, .dh-wrapper .dh-settings__row--skillinit, .dh-wrapper .dh-settings__row--talentinit, .dh-wrapper .dh-settings__row--traitinit, .dh-wrapper .dh-settings__row--skill, .dh-wrapper .dh-settings__row--invert, .dh-wrapper .dh-settings__row--characteristics, .dh-wrapper .dh-settings__row--span-even, .dh-wrapper .dh-settings__row--span, .dh-wrapper .dh-settings__row--label, .dh-wrapper .dh-settings__row--xlarge, .dh-wrapper .dh-settings__row--large {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  text-align: left;
+}
+.dh-wrapper .dh-settings__row--large {
+  grid-column: 1/-1;
+  grid-template-columns: 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr;
+}
+.dh-wrapper .dh-settings__row--xlarge {
+  grid-column: 1/-1;
+  grid-template-columns: 0.4fr 1fr 0.4fr 1fr 0.4fr 1fr 0.4fr 1fr;
+}
+.dh-wrapper .dh-settings__row--label {
+  grid-template-columns: 5rem 1fr;
+}
+.dh-wrapper .dh-settings__row--span {
+  grid-column: 1/-1;
+  grid-template-columns: 9rem 1fr;
+}
+.dh-wrapper .dh-settings__row--span-even {
+  grid-column: 1/-1;
+  grid-template-columns: 1fr 1fr;
+}
+.dh-wrapper .dh-settings__row--characteristics {
+  grid-column: 1/-1;
+  grid-template-columns: 1.5fr repeat(10, 1fr);
+}
+.dh-wrapper .dh-settings__row--characteristics > * {
+  display: grid;
+  grid-auto-rows: 2rem;
+  border-right: 1px solid #000;
+}
+.dh-wrapper .dh-settings__row--characteristics > *:last-child {
+  border: none;
+}
+.dh-wrapper .dh-settings__row--characteristics > * > div {
+  border-bottom: 1px solid #000;
+}
+.dh-wrapper .dh-settings__row--characteristics > * > div:last-child {
+  border: none;
+}
+.dh-wrapper .dh-settings__row--characteristics input[type=number],
+.dh-wrapper .dh-settings__row--characteristics input[type=text] {
+  border-radius: 0 !important;
+}
+.dh-wrapper .dh-settings__row--characteristics input[type=number]:last-child,
+.dh-wrapper .dh-settings__row--characteristics input[type=text]:last-child {
+  border: none;
+}
+.dh-wrapper .dh-settings__row--characteristics label {
+  border-bottom: 1px solid #000;
+}
+.dh-wrapper .dh-settings__row--invert {
+  grid-template-columns: 2fr 0.5fr;
+  text-align: left;
+}
+.dh-wrapper .dh-settings__row--skill {
+  grid-template-columns: 1fr 0.35fr;
+  gap: 3px;
+  margin-bottom: 3pt;
+}
+.dh-wrapper .dh-settings__row--skillinit, .dh-wrapper .dh-settings__row--talentinit, .dh-wrapper .dh-settings__row--traitinit {
+  grid-template-columns: 1fr 0.45fr 0.45fr;
+  gap: 3px;
+  margin-bottom: 3pt;
+}
+.dh-wrapper .dh-settings__row--talent, .dh-wrapper .dh-settings__row--trait {
+  grid-template-columns: 1fr 0.35fr;
+  gap: 3px;
+  margin-bottom: 3pt;
+}
+.dh-wrapper .dh-settings__label, .dh-wrapper .dh-settings__label--add {
+  display: block;
+  margin-left: 5pt;
+}
+.dh-wrapper .dh-settings__label--add {
+  cursor: pointer;
+}
+.dh-wrapper .dh-settings__label--add:hover {
+  color: red;
+}
+.dh-wrapper .dh-settings__label--full {
+  grid-column: 1/-1;
+  text-align: left;
+}
+.dh-wrapper .dh-settings__description {
+  text-align: center;
+  padding-top: 3px;
+  text-transform: uppercase;
+}
+.dh-wrapper .dh-settings__item {
+  text-align: center;
+}
+.dh-wrapper .dh-settings__item input[type=checkbox] {
+  display: none;
+}
+.dh-wrapper .dh-settings__item input.dh-settings__input.dh-settings__input[type=number] {
+  pointer-events: none;
+  background: transparent;
+  color: #000;
+}
+.dh-wrapper .dh-settings__item label {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+}
+.dh-wrapper .dh-settings__item label:hover {
+  color: red;
+}
+.dh-wrapper .dh-settings__split--2 {
+  display: grid;
+  grid-template-columns: 1fr 3em;
+}
+.dh-wrapper .dh-settings__split--2-even {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.dh-wrapper .dh-settings__split--3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.dh-wrapper .dh-settings__textarea {
+  grid-column: 1/-1;
+}
+.dh-wrapper .dh-settings__titlewrap {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.dh-wrapper .dh-settings__titlewrap h2 {
+  grid-column: auto;
+  text-indent: -10rem;
+}
+.dh-wrapper .dh-settings__controlwrap span.dh-current_level--1, .dh-wrapper .dh-settings__controlwrap span.dh-current_level--2, .dh-wrapper .dh-settings__controlwrap span.dh-current_level--3, .dh-wrapper .dh-settings__controlwrap span.dh-current_level--4 {
+  display: none;
+  background: url("../images/success.png") no-repeat center/100% 100%;
+  color: #fff;
+  font-size: 9pt;
+  font-family: "Lusitana", serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.dh-wrapper .dh-settings__controlwrap button[type=action] {
+  background: url("../images/fail.png") no-repeat center/100% 100%;
+  color: #fff;
+  font-size: 9pt;
+  font-family: "Lusitana", serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.dh-wrapper .dh-settings__controlwrap input[name*=career_level_current][value="1"] + button[name*="1"] {
+  display: none;
+}
+.dh-wrapper .dh-settings__controlwrap input[name*=career_level_current][value="1"] ~ span.dh-current_level--1 {
+  display: block;
+}
+.dh-wrapper .dh-settings__controlwrap input[name*=career_level_current][value="2"] + button[name*="2"] {
+  display: none;
+}
+.dh-wrapper .dh-settings__controlwrap input[name*=career_level_current][value="2"] ~ span.dh-current_level--2 {
+  display: block;
+}
+.dh-wrapper .dh-settings__controlwrap input[name*=career_level_current][value="3"] + button[name*="3"] {
+  display: none;
+}
+.dh-wrapper .dh-settings__controlwrap input[name*=career_level_current][value="3"] ~ span.dh-current_level--3 {
+  display: block;
+}
+.dh-wrapper .dh-settings__controlwrap input[name*=career_level_current][value="4"] + button[name*="4"] {
+  display: none;
+}
+.dh-wrapper .dh-settings__controlwrap input[name*=career_level_current][value="4"] ~ span.dh-current_level--4 {
+  display: block;
+}
+.dh-wrapper .dh-settingstable__row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.25rem;
+  margin: 0.25rem;
+}
+.dh-wrapper .dh-armour__wrapper {
+  background: url("../images/armour.png") center/80% no-repeat, url("../images/40k_back.png") center/cover;
+}
+.dh-wrapper .dh-armour__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-height: 8rem;
+}
+.dh-wrapper .dh-armour__block, .dh-wrapper .dh-armour__block--head, .dh-wrapper .dh-armour__block--leftarm, .dh-wrapper .dh-armour__block--rightarm, .dh-wrapper .dh-armour__block--body, .dh-wrapper .dh-armour__block--rightleg, .dh-wrapper .dh-armour__block--leftleg, .dh-wrapper .dh-armour__block--toughness, .dh-wrapper .dh-armour__block--trait {
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  text-align: center;
+}
+.dh-wrapper .dh-armour__block--toughness, .dh-wrapper .dh-armour__block--trait {
+  margin-top: 1em;
+}
+.dh-wrapper .dh-armour__display {
+  border: 1px solid black;
+  font-family: "Lusitana", serif;
+  font-size: 14pt;
+  font-weight: bold;
+  line-height: 3.5rem;
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.dh-wrapper .dh-char-roller__wrapper {
+  background: url("../images/inqu_watermark.png") bottom/50% no-repeat, url("../images/40k_back.png") center/cover;
+}
+.dh-wrapper .dh-char-roller__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-height: 8rem;
+}
+.dh-wrapper .dh-char-roller__block {
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  text-align: center;
+}
+.dh-wrapper .dh-char-roller__display {
+  border: 1px solid black;
+  font-family: "Lusitana", serif;
+  font-size: 14pt;
+  font-weight: bold;
+  line-height: 3.5rem;
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 5pt;
+  background-color: rgba(44, 76, 87, 0.125);
+  cursor: pointer;
+}
+.dh-wrapper .dh-char-roller__display:hover {
+  color: red;
+}
+.dh-wrapper .dh-chartable {
+  display: grid;
+  grid-template-columns: 0.75fr repeat(10, 0.5fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-auto-flow: column;
+}
+.dh-wrapper .dh-chartable select,
+.dh-wrapper .dh-chartable input[type=number],
+.dh-wrapper .dh-chartable .dh-chartable__cell,
+.dh-wrapper .dh-chartable .dh-chartable__cell--head {
+  height: 100%;
+  text-align: center !important;
+  -moz-text-align-last: center !important;
+  text-align-last: center !important;
+}
+.dh-wrapper .dh-chartable__cell {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  font-family: "Lusitana", serif;
+}
+.dh-wrapper .dh-chartable__cell .dh-field__input {
+  border-right: none !important;
+}
+.dh-wrapper .dh-chartable__cell--left {
+  border-top: 1px solid black;
+}
+.dh-wrapper .dh-chartable__cell--head {
+  border-left: 1px solid black;
+}
+.dh-wrapper .dh-actor {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border: 20px solid transparent;
+  -o-border-image: url("../images/border-floral.png") 95/20px/0 round;
+  border-image: url("../images/border-floral.png") 95/20px/0 round;
+  grid-gap: 0;
+}
+.dh-wrapper .dh-actor > * {
+  min-width: 100px;
+}
+.dh-wrapper .dh-item {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border: 20px solid transparent;
+  -o-border-image: url("../images/border-floral.png") 95/20px/0 round;
+  border-image: url("../images/border-floral.png") 95/20px/0 round;
+  grid-gap: 0;
+}
+.dh-wrapper .dh-item > * {
+  min-width: 100px;
+}
+.dh-wrapper .dh-item__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: auto;
+  padding: 0 1.5em 0.5em;
+}
+.dh-wrapper .dh-item__info__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  min-width: 0;
+}
+.dh-wrapper .dh-attack {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0;
+}
+.dh-wrapper .dh-attack > * {
+  min-width: 100px;
+}
+.dh-wrapper .dh-attack__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: auto;
+  padding: 0 1.5em 0.5em;
+}
+.dh-wrapper .dh-attack__info__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  min-width: 0;
+}

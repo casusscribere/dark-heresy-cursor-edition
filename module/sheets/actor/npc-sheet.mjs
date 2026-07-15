@@ -1,0 +1,16 @@
+import { AcolyteSheet } from './acolyte-sheet.mjs';
+
+export class NpcSheet extends AcolyteSheet {
+    static get defaultOptions() {
+        return foundry.utils.mergeObject(super.defaultOptions, {
+            width: 1000,
+            height: 750,
+            resizable: true,
+            tabs: [{ navSelector: '.dh-navigation', contentSelector: '.dh-body', initial: 'main' }],
+        });
+    }
+
+    get template() {
+        return `systems/dark-heresy-3rd-edition/templates/actor/actor-npc-sheet.hbs`;
+    }
+}

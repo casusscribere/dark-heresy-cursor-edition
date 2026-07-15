@@ -1,0 +1,16 @@
+{
+  "name": "foundry-join",
+  "private": true,
+  "type": "module",
+  "description": "One-off Playwright helper to join a local Foundry world",
+  "scripts": {
+    "join": "node join-foundry.mjs",
+    "join:visible": "node join-foundry.mjs --headed",
+    "join:headless": "node join-foundry.mjs --headless",
+    "join:visible:debug": "node join-foundry.mjs --headed",
+    "join:bolt-test": "node join-foundry.mjs --headed --equip-content-index-bolts"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0"
+  }
+}
