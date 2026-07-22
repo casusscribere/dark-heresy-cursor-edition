@@ -1,10 +1,9 @@
-# LevelDB pack runtime churn — regenerated on every Foundry launch
-# (policy per 40K_TTRPG docs/handoff_2026-07-22/04_WSL_TRANSFER_RECOMMENDATIONS.md §0)
-packs/*/LOG*
-packs/*/*.log
-packs/*/CURRENT
-packs/*/MANIFEST-*
-packs/*/LOCK
+# LevelDB pack runtime directories — Foundry v11+ generates packs/<name>/ from
+# the tracked packs/<name>.db NeDB sources (system.json declares the .db paths)
+# and rewrites them on launch/compaction. Entire dirs are runtime artifacts;
+# only the .db files are distribution content. (Supersedes the narrower
+# LOG/CURRENT/MANIFEST patterns from handoff §0 — 2026-07-22.)
+packs/*/
 
 # Test harness dependencies
 node_modules/
