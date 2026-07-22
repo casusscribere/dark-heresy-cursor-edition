@@ -1,0 +1,19 @@
+{
+    "name": "dark-heresy-3rd-edition",
+    "private": true,
+    "version": "0.0.0-tests",
+    "type": "module",
+    "description": "Test scaffolding for the dark-heresy-3rd-edition Foundry system. Production code is loaded directly by Foundry from system.json; this package only enables Vitest/Node-side unit testing of pure module logic.",
+    "scripts": {
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "test:coverage": "vitest run --coverage",
+        "test:static": "node tests/static/validate-packs.mjs",
+        "test:player": "node tests/player/run.mjs tests/player/scenarios/smoke.rt2e",
+        "test:player:parse": "vitest run tests/unit/player-parser.test.mjs tests/unit/player-config.test.mjs"
+    },
+    "devDependencies": {
+        "playwright": "^1.49.0",
+        "vitest": "^2.1.0"
+    }
+}

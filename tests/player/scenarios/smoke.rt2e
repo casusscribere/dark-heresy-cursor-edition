@@ -1,0 +1,30 @@
+# RT2E smoke scenario — basic player workflow
+# Requires: Foundry test server running; world "test"; user "cursor-player" (blank password).
+# LOGIN / ENTER_WORLD are rewritten by tests/player/config.mjs at run time.
+
+# --- Session ---
+LOGIN user=cursor-player password=
+ENTER_WORLD name=test
+WAIT_READY timeout=120000
+
+# --- Character ---
+CREATE_CHARACTER name="Smoke Test Acolyte" type=acolyte
+OPEN_SHEET actor=$last
+
+# --- Statistics ---
+SET_STAT actor=$last path=system.characteristics.weaponSkill.base value=35
+SET_STAT actor=$last path=system.characteristics.ballisticSkill.base value=30
+ASSERT actor=$last path=system.characteristics.weaponSkill.base equals=35
+
+# --- Gear ---
+CREATE_ITEM actor=$last name="Smoke Lasgun" type=weapon
+MODIFY_GEAR actor=$last item=$last_item path=system.damage value="1d10+3"
+EQUIP actor=$last item=$last_item equipped=true
+ASSERT actor=$last path=system.characteristics.weaponSkill.base equals=35
+
+CLOSE_SHEET
+SCREENSHOT label=smoke-complete
+
+# --- Cleanup ---
+DELETE_ITEM item=$last_item
+DELETE_ACTOR actor=$last

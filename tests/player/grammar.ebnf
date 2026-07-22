@@ -1,0 +1,84 @@
+(* RT2E Player Action Grammar v1 — rogue-trader-2nd player agent *)
+(* One command per non-empty, non-comment line. Keys are case-sensitive. *)
+
+script       = { line } ;
+line         = comment | command | blank ;
+comment      = "#", { ? any char except newline ? } ;
+blank        = { whitespace } ;
+
+command      = login
+             | enter_world
+             | wait_ready
+             | create_character
+             | open_sheet
+             | close_sheet
+             | create_item
+             | equip
+             | modify_gear
+             | set_stat
+             | assert_cmd
+             | assert_exists
+             | delete_actor
+             | delete_item
+             | screenshot
+             ;
+
+(* --- Session / browser --- *)
+
+login        = "LOGIN", whitespace, login_args ;
+login_args   = "user=", ident, [ whitespace, "password=", string ] ;
+
+enter_world  = "ENTER_WORLD", whitespace, "name=", ident ;
+
+wait_ready   = "WAIT_READY", [ whitespace, "timeout=", integer ] ;
+
+(* --- Character / sheet --- *)
+
+create_character = "CREATE_CHARACTER", whitespace, create_character_args ;
+create_character_args = "name=", string, whitespace, "type=", ident,
+                        [ whitespace, "folder=", string ] ;
+
+open_sheet   = "OPEN_SHEET", whitespace, "actor=", ref ;
+close_sheet  = "CLOSE_SHEET" ;
+
+(* --- Items / gear --- *)
+
+create_item  = "CREATE_ITEM", whitespace, create_item_args ;
+create_item_args = "actor=", ref, whitespace, "name=", string,
+                   whitespace, "type=", ident ;
+
+equip        = "EQUIP", whitespace, equip_args ;
+equip_args   = "actor=", ref, whitespace, "item=", ref,
+               [ whitespace, "equipped=", boolean ] ;
+
+modify_gear  = "MODIFY_GEAR", whitespace, gear_change_args ;
+set_stat     = "SET_STAT", whitespace, stat_change_args ;
+gear_change_args = "actor=", ref, whitespace, "item=", ref, whitespace,
+                   "path=", dotpath, whitespace, "value=", value ;
+stat_change_args = "actor=", ref, whitespace, "path=", dotpath,
+                     whitespace, "value=", value ;
+
+(* --- Assertions / cleanup --- *)
+
+assert_cmd   = "ASSERT", whitespace, assert_args ;
+assert_args  = "actor=", ref, whitespace, "path=", dotpath,
+               whitespace, "equals=", value ;
+
+assert_exists = "ASSERT_EXISTS", whitespace, "actor=", ref ;
+
+delete_actor = "DELETE_ACTOR", whitespace, "actor=", ref ;
+delete_item  = "DELETE_ITEM", whitespace, "item=", ref ;
+
+screenshot   = "SCREENSHOT", whitespace, "label=", ident ;
+
+(* --- Terminals --- *)
+
+ref          = "$last" | "$last_item" | "$actor:", ident | uuid ;
+dotpath      = ident, { ".", ident } ;
+ident        = letter, { letter | digit | "_" | "-" } ;
+uuid         = ? Foundry document id, 16 alphanumeric chars ? ;
+string       = '"', { ? any char except " ? }, '"' ;
+value        = string | number | boolean | "null" ;
+boolean      = "true" | "false" ;
+integer      = digit, { digit } ;
+number       = [ "-" ], digit, { digit }, [ ".", digit, { digit } ] ;

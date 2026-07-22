@@ -1,0 +1,10 @@
+# LevelDB pack runtime churn — regenerated on every Foundry launch
+# (policy per 40K_TTRPG docs/handoff_2026-07-22/04_WSL_TRANSFER_RECOMMENDATIONS.md §0)
+packs/*/LOG*
+packs/*/*.log
+packs/*/CURRENT
+packs/*/MANIFEST-*
+packs/*/LOCK
+
+# Test harness dependencies
+node_modules/
